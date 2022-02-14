@@ -5522,6 +5522,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-proposal-numeric-separator", "virtual:daf27b529fe7adf20feb93843a953ea3e325046f2e7b7cc00b5360ec686a03f9c599d773766933623bf7125374cdc8beceb9de6592511d5ed6c71a2061771f92#npm:7.16.7"],
             ["@babel/plugin-proposal-optional-chaining", "virtual:daf27b529fe7adf20feb93843a953ea3e325046f2e7b7cc00b5360ec686a03f9c599d773766933623bf7125374cdc8beceb9de6592511d5ed6c71a2061771f92#npm:7.16.7"],
             ["@babel/plugin-proposal-private-methods", "virtual:daf27b529fe7adf20feb93843a953ea3e325046f2e7b7cc00b5360ec686a03f9c599d773766933623bf7125374cdc8beceb9de6592511d5ed6c71a2061771f92#npm:7.16.11"],
+            ["@babel/plugin-proposal-private-property-in-object", "virtual:daf27b529fe7adf20feb93843a953ea3e325046f2e7b7cc00b5360ec686a03f9c599d773766933623bf7125374cdc8beceb9de6592511d5ed6c71a2061771f92#npm:7.16.7"],
             ["@babel/plugin-transform-flow-strip-types", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.16.7"],
             ["@babel/plugin-transform-react-display-name", "virtual:cba3f60e67d5be20aa207e946b53296b7fe58aeae430a60e6cb5c71e5b6d116e26ae3f987c8f436e4392c2a72c126ce0771cf92e7ea882c1afd09bcb1be204f0#npm:7.16.7"],
             ["@babel/plugin-transform-runtime", "virtual:a9a19b630a588155c92f4ae8a8db8144917ee83e3cd36bb76901eb84a4f5c22dc9e3132b483ed08b52ebbd0b97f69550387746aa970daf04db052b2bb054ab12#npm:7.17.0"],
