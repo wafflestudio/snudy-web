@@ -1,19 +1,20 @@
-import logo from './logo.svg';
+import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
+import Assignment from './components/assignment/Assignment';
+import Overview from './components/overview/Overview';
+import Planner from './components/planner/Planner';
+import Sidemenu from './components/Sidemenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route element={<Sidemenu />}>
+        <Route path="/" element={<Overview />} />
+        <Route path="/assignment" element={<Assignment />} />
+        <Route path="/planner" element={<Planner />} />
+      </Route>
+    </Routes>
   );
 }
 
