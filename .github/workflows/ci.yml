@@ -16,4 +16,4 @@ jobs:
         run: yarn build
 
       - name: Test
-        run: yarn test --watchAll=false
+        run: CI=true yarn test --watchAll=false
