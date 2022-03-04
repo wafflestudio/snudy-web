@@ -1,8 +1,6 @@
 name: Deploy
 
-on:
-  push:
-    branches: [ master ]
+on: [pull_request]
 
 jobs:
   deploy:
@@ -20,3 +18,5 @@ jobs:
         run: yarn install && yarn build
       - name: Deploy the site
         run: aws s3 sync ./build s3://${{ secrets.AWS_DEPLOY_BUCKET }} --delete
+      - name: Invalidate CloudFront Cache
+        run: aws cloudfront create-invalidation --distribution-id ${{secrets.DEV_DISTRIBUTION_ID}} --paths "/*"
