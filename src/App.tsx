@@ -1,18 +1,18 @@
 import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import Assignment from './components/assignment/Assignment';
-import Overview from './components/overview/Overview';
-import Planner from './components/planner/Planner';
-import Sidemenu from './components/Sidemenu';
+import Layout from './components/layout/Layout';
+import Schedule from './components/schedule/Schedule';
+import Overview from './components/snudyspace/SnudySpace';
+import Todo from './components/todo/Todo';
 
 function App() {
   return (
     <Routes>
-      <Route element={<Sidemenu />}>
+      <Route element={<Layout />}>
         <Route path="/" element={<Overview />} />
-        <Route path="/assignment" element={<Assignment />} />
-        <Route path="/planner" element={<Planner />} />
+        <Route path="/schedule" element={<Schedule />} />
+        <Route path="/todo" element={<Todo />} />
       </Route>
     </Routes>
   );
