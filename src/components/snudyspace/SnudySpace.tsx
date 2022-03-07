@@ -1,5 +1,5 @@
-const Overview = () => {
+const SnudySpace = () => {
   return <div>개요</div>;
 };
 
-export default Overview;
+export default SnudySpace;
