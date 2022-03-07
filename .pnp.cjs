@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@emotion/react", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:11.8.1"],
             ["@emotion/styled", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:11.8.1"],
+            ["@mui/icons-material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
             ["@mui/material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
             ["@types/node", "npm:16.11.24"],
             ["@types/react", "npm:17.0.39"],
@@ -3506,6 +3507,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/react-dom",
             "@types/react",
             "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@mui/icons-material", [
+        ["npm:5.4.4", {
+          "packageLocation": "./.yarn/cache/@mui-icons-material-npm-5.4.4-b97b45956a-c8207018a2.zip/node_modules/@mui/icons-material/",
+          "packageDependencies": [
+            ["@mui/icons-material", "npm:5.4.4"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4", {
+          "packageLocation": "./.yarn/__virtual__/@mui-icons-material-virtual-1697823c89/0/cache/@mui-icons-material-npm-5.4.4-b97b45956a-c8207018a2.zip/node_modules/@mui/icons-material/",
+          "packageDependencies": [
+            ["@mui/icons-material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
+            ["@babel/runtime", "npm:7.17.2"],
+            ["@mui/material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
+            ["@types/mui__material", null],
+            ["@types/react", "npm:17.0.39"],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@mui/material",
+            "@types/mui__material",
+            "@types/react",
             "react"
           ],
           "linkType": "HARD",
@@ -15129,6 +15157,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["snudy-web", "workspace:."],
             ["@emotion/react", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:11.8.1"],
             ["@emotion/styled", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:11.8.1"],
+            ["@mui/icons-material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
             ["@mui/material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
             ["@types/node", "npm:16.11.24"],
             ["@types/react", "npm:17.0.39"],

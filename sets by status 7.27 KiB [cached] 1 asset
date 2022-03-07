@@ -1,0 +1,123 @@
+[33mcommit f6906326ddf4718a4a58064260da92456d6a5416[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/layout[m[33m, [m[1;31morigin/feature/layout[m[33m)[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Sun Mar 6 21:21:10 2022 +0900
+
+    상단 상태 바 및 하단 네비게이터 바 추가
+
+[33mcommit 1726892c6a653e8f040d275f428bdb851886c847[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Sun Mar 6 18:14:17 2022 +0900
+
+    install Material UI
+
+[33mcommit 06e7bae6d34075fade1a45626201f47d5fae4743[m[33m ([m[1;31morigin/cdsetting[m[33m, [m[1;32mcdsetting[m[33m)[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Sat Mar 5 13:15:00 2022 +0900
+
+    update cd.yml
+
+[33mcommit 786c093537cdff524ce556cd520c9332e91cbeef[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Fri Mar 4 11:10:57 2022 +0900
+
+    update cd.yml
+
+[33mcommit 72f9f6898e22971bd51bdcffb2e644e1770ec63a[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Fri Mar 4 10:58:15 2022 +0900
+
+    cd.yml 수정
+
+[33mcommit 2145bb9cc87e0361d82e4e323a4db795fc2b5c47[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Fri Mar 4 10:56:40 2022 +0900
+
+    update cd.yml
+
+[33mcommit 5f64ba9f7f2f0d3b3f41c3ef174ced5f99909f00[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: a4accd6 d6f666c
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Fri Mar 4 00:22:17 2022 +0900
+
+    Merge branch 'master' of https://github.com/wafflestudio/snudy-web
+
+[33mcommit a4accd6b2436af37f0a1db993be8e53d1f0f71e3[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Fri Mar 4 00:21:55 2022 +0900
+
+    set sourcemap false
+
+[33mcommit d6f666ca7a58db96a26416d0142a731b8a9a1ed5[m
+Author: Chang-Man <88428193+Chang-Man@users.noreply.github.com>
+Date:   Fri Mar 4 00:13:33 2022 +0900
+
+    Update cd.yml
+
+[33mcommit d895ac310c566b0dbaeea8b1bc1c12d39dfb569d[m
+Author: Chang-Man <88428193+Chang-Man@users.noreply.github.com>
+Date:   Fri Mar 4 00:11:49 2022 +0900
+
+    Create cd.yml
+
+[33mcommit 6050d69d7d75a551968dcfea4be281e5a023cec5[m
+Merge: a53ba34 00fe911
+Author: Chang-Man <88428193+Chang-Man@users.noreply.github.com>
+Date:   Wed Feb 16 11:56:18 2022 +0900
+
+    Merge pull request #1 from wafflestudio/feature/routing-setting
+    
+    Feature/routing setting
+
+[33mcommit 00fe911d7b3af2c1a8e606f8702f4b9d270bbfe9[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Wed Feb 16 00:37:09 2022 +0900
+
+    routing 구조 잡기
+
+[33mcommit 27109fa391aa7407edcf4b25a57f50ca61c10708[m
+Author: Chang-Man <changagim@snu.ac.kr>
+Date:   Tue Feb 15 21:47:17 2022 +0900
+
+    install react router dom v6
+
+[33mcommit a53ba34dce0ffb41ab8bee3e84654cc0e918a681[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 22:19:57 2022 +0900
+
+    add lint script on github action
+
+[33mcommit d9998bfd43d9a3054220d787a833de40626dc750[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 21:54:16 2022 +0900
+
+    setup eslint & prettier
+
+[33mcommit b3984d29b4c4591456e3265695927fcb992846a3[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 21:51:14 2022 +0900
+
+    remove test scripts
+
+[33mcommit 2c116548c659c2e29dfa0fac4c435ac0e18b96cf[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 21:49:13 2022 +0900
+
+    clear dependencies
+
+[33mcommit 9933aa97a9b9f4a547530a7de2b05104b114228a[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 21:44:16 2022 +0900
+
+    switch to pnp
+
+[33mcommit ee8e5a39a832f30484af1fdd68fbcf1072c167dd[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 21:41:47 2022 +0900
+
+    switch to yarn berry
+
+[33mcommit fa5f04193b461a241096a473cbeb07435970907b[m
+Author: woohm402 <woohm404@gmail.com>
+Date:   Mon Feb 14 21:38:22 2022 +0900
+
+    Initialize project using Create React App

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { CalendarToday, FormatListNumbered, BorderColor } from '@mui/icons-material';
 import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -20,18 +21,21 @@ const NavigationBar = () => {
           onClick={() => {
             navigate('/');
           }}
+          icon={<BorderColor />}
         />
         <BottomNavigationAction
           label="Schedule"
           onClick={() => {
             navigate('/schedule');
           }}
+          icon={<CalendarToday />}
         />
         <BottomNavigationAction
           label="To Do"
           onClick={() => {
             navigate('/todo');
           }}
+          icon={<FormatListNumbered />}
         />
       </BottomNavigation>
     </Box>
