@@ -1,19 +1,11 @@
 import { Box } from '@mui/material';
 
+import styles from '../../styles/StatusBar.module.scss';
+
 const StatusBar = () => {
   return (
-    <Box
-      sx={{
-        width: '100 %',
-        height: '40px',
-        backgroundColor: 'gray',
-        color: 'white',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'middle ',
-      }}
-    >
-      <span>시간 / 남은 과제</span>
+    <Box className={styles.wrapper}>
+      <span className={styles.statusText}>2022.03.18 / 남은 과제 : 5</span>
     </Box>
   );
 };

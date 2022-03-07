@@ -4,11 +4,13 @@ import { CalendarToday, FormatListNumbered, BorderColor } from '@mui/icons-mater
 import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
+import styles from '../../styles/NavigationBar.module.scss';
+
 const NavigationBar = () => {
   const navigate = useNavigate();
   const [value, setValue] = useState(0);
   return (
-    <Box sx={{ width: '100%', position: 'fixed', bottom: 0 }}>
+    <Box className={styles.wrapper}>
       <BottomNavigation
         showLabels
         value={value}
