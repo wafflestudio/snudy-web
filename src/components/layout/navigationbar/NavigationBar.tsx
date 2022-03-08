@@ -4,7 +4,7 @@ import { CalendarToday, FormatListNumbered, BorderColor } from '@mui/icons-mater
 import { BottomNavigation, BottomNavigationAction, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-import styles from '../../styles/NavigationBar.module.scss';
+import styles from './NavigationBar.module.scss';
 
 const NavigationBar = () => {
   const navigate = useNavigate();

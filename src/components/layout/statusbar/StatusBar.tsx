@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 
-import styles from '../../styles/StatusBar.module.scss';
+import styles from './StatusBar.module.scss';
 
 const StatusBar = () => {
   return (
