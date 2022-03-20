@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
             ["@typescript-eslint/parser", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
             ["classnames", "npm:2.3.1"],
+            ["dayjs", "npm:1.11.0"],
             ["eslint", "npm:8.9.0"],
             ["eslint-config-prettier", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:8.3.0"],
             ["eslint-import-resolver-node", "npm:0.3.6"],
@@ -7282,6 +7283,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["abab", "npm:2.0.5"],
             ["whatwg-mimetype", "npm:2.3.0"],
             ["whatwg-url", "npm:8.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["dayjs", [
+        ["npm:1.11.0", {
+          "packageLocation": "./.yarn/cache/dayjs-npm-1.11.0-592daa78a5-2d36f6d713.zip/node_modules/dayjs/",
+          "packageDependencies": [
+            ["dayjs", "npm:1.11.0"]
           ],
           "linkType": "HARD",
         }]
@@ -15210,6 +15220,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/eslint-plugin", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
             ["@typescript-eslint/parser", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
             ["classnames", "npm:2.3.1"],
+            ["dayjs", "npm:1.11.0"],
             ["eslint", "npm:8.9.0"],
             ["eslint-config-prettier", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:8.3.0"],
             ["eslint-import-resolver-node", "npm:0.3.6"],
