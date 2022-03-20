@@ -1,7 +1,9 @@
 import { ArrowBack } from '@mui/icons-material';
-import { Button } from '@mui/material';
-import { useParams, useNavigate } from 'react-router-dom';
+import { Button, Tab, Tabs } from '@mui/material';
+import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 
+import Board from './board/Board';
+import Reference from './reference/Reference';
 import SubjectInfoTable from './subject-info-table/SubjectInfoTable';
 
 import styles from './SubjectDetail.module.scss';
@@ -14,15 +16,31 @@ const dummyData = [
 
 const SubjectDetail = () => {
   const { id } = useParams();
+  const [params, setParams] = useSearchParams();
   const navigate = useNavigate();
 
+  const tab = Number(params.get('tab') ?? 0);
+
   return (
-    <div className={styles.header}>
-      <Button variant="outlined" onClick={() => navigate('/')}>
-        <ArrowBack />
-        {id}
-      </Button>
-      <SubjectInfoTable data={dummyData} />
+    <div className={styles.wrapper}>
+      <div className={styles.header}>
+        <Button variant="outlined" onClick={() => navigate('/')}>
+          <ArrowBack />
+          {id}
+        </Button>
+        <SubjectInfoTable data={dummyData} />
+      </div>
+      <Tabs
+        value={tab}
+        onChange={(_, v) => {
+          params.set('tab', v);
+          setParams(params);
+        }}
+      >
+        <Tab label="게시판" />
+        <Tab label="자료실" />
+      </Tabs>
+      {tab === 0 ? <Board /> : <Reference />}
     </div>
   );
 };
