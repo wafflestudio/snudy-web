@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 12fr;
+  grid-template-columns: 3fr 1fr;
+  min-height: 100%;
+  gap: 20px;
+
+  .subjectWrapper {
+    grid-row: 2 / 3;
+    // display: flex;
+    // flex-wrap: wrap;
+
+    // justify-content: space-evenly;
+  }
+}

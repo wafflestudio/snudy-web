@@ -1,0 +1,24 @@
+.box {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  float: left;
+  margin: 0 20px 20px 0;
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .taskNum {
+    font-size: 14px;
+  }
+}
