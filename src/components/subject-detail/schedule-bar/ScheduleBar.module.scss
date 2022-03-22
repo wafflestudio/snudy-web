@@ -1,0 +1,15 @@
+.wrapper {
+  padding-top: 40px;
+
+  .subHeader {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .addButton {
+    display: flex;
+    justify-content: center;
+  }
+}

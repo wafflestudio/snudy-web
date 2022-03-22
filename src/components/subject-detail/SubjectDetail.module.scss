@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 3fr 1fr;
+  min-height: 100%;
+  gap: 20px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+
+  .tabWrapper {
+    grid-row: 2 / 3;
+
+    .tabs {
+      position: relative;
+      margin: 0 20px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        background-color: #eee;
+        bottom: 0;
+        height: 2px;
+      }
+    }
+  }
+
+  .scheduleBar {
+    grid-row: 1 / 3;
+    border-left: 1px solid #bbb;
+    padding-left: 20px;
+  }
+}
