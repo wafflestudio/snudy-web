@@ -13,4 +13,9 @@
 
     // justify-content: space-evenly;
   }
+  .notificationBar {
+    grid-row: 1 / 3;
+    border-left: 1px solid #bbb;
+    padding-left: 20px;
+  }
 }

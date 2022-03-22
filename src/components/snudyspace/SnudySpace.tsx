@@ -1,5 +1,6 @@
 import { Select, MenuItem } from '@mui/material';
 
+import NotificationBar from './notificatioin-bar/NotificationBar';
 import SubjectItem from './subject-item/SubjectItem';
 
 import styles from './SnudySpace.module.scss';
@@ -61,6 +62,7 @@ const SnudySpace = () => {
           <SubjectItem key={subject.id} subject={subject} />
         ))}
       </div>
+      <NotificationBar className={styles.notificationBar} />
     </div>
   );
 };
