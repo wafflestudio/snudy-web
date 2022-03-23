@@ -4,7 +4,7 @@ import './App.css';
 import Layout from './components/common/layout/Layout';
 import Schedule from './components/schedule/Schedule';
 import SnudySpace from './components/snudyspace/SnudySpace';
-import SubjectDetail from './components/snudyspace/subject-detail/SubjectDetail';
+import SubjectDetail from './components/subject-detail/SubjectDetail';
 import Todo from './components/todo/Todo';
 
 function App() {
