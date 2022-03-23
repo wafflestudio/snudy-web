@@ -13,7 +13,7 @@ const SubjectItem = ({ subject }: Props) => {
     <div
       className={styles.box}
       onClick={() => {
-        navigate(`/snudyspace/${subject.id}`);
+        navigate(`/space/${subject.id}`);
       }}
     >
       <span className={styles.name}>{subject.name}</span>
