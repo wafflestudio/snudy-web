@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
 import Layout from './components/layout/Layout';
@@ -11,9 +11,8 @@ function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path="/" element={<Navigate replace to="/snudyspace" />} />
-        <Route path="/snudyspace" element={<SnudySpace />} />
-        <Route path="/snudyspace/:id" element={<SubjectDetail />} />
+        <Route path="/" element={<SnudySpace />} />
+        <Route path="/space/:id" element={<SubjectDetail />} />
 
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/todo" element={<Todo />} />
