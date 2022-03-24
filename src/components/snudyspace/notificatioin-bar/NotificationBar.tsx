@@ -1,9 +1,6 @@
 import NotificationsIcon from '@mui/icons-material/Notifications';
-import { List, ListItem, ListSubheader } from '@mui/material';
+import { List, ListSubheader } from '@mui/material';
 import classNames from 'classnames';
-import { useNavigate } from 'react-router-dom';
-
-import { Subject } from '../SnudySpace';
 
 import NotificationItem from './NotificationItem/NotificationItem';
 
@@ -24,7 +21,6 @@ const dummyNotifications: Notification[] = [
   { id: '2', title: '제목', content: '내용' },
 ];
 const NotificationBar = ({ className }: Props) => {
-  const navigate = useNavigate();
   return (
     <div className={classNames(className, styles.wrapper)}>
       <List
