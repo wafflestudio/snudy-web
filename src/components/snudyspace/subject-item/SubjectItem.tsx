@@ -1,3 +1,4 @@
+import { Card, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 import { Subject } from '../SnudySpace';
@@ -10,15 +11,16 @@ interface Props {
 const SubjectItem = ({ subject }: Props) => {
   const navigate = useNavigate();
   return (
-    <div
+    <Card
       className={styles.box}
+      variant="outlined"
       onClick={() => {
         navigate(`/space/${subject.id}`);
       }}
     >
-      <span className={styles.name}>{subject.name}</span>
-      <span className={styles.taskNum}>남은 과제 : {subject.taskNum}</span>
-    </div>
+      <Typography className={styles.name}>{subject.name}</Typography>
+      <Typography className={styles.taskNum}>남은 과제 : {subject.taskNum}</Typography>
+    </Card>
   );
 };
 

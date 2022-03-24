@@ -1,4 +1,5 @@
-import { Select, MenuItem } from '@mui/material';
+import { AddOutlined } from '@mui/icons-material';
+import { Select, MenuItem, Card } from '@mui/material';
 
 import NotificationBar from './notificatioin-bar/NotificationBar';
 import SubjectItem from './subject-item/SubjectItem';
@@ -61,6 +62,9 @@ const SnudySpace = () => {
         {dummySubjects.map((subject) => (
           <SubjectItem key={subject.id} subject={subject} />
         ))}
+        <Card className={styles.add} variant="outlined">
+          <AddOutlined />
+        </Card>
       </div>
       <NotificationBar className={styles.notificationBar} />
     </div>

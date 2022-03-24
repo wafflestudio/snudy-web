@@ -5,4 +5,10 @@
   .avatar {
     width: 100%;
   }
+
+  .text {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
