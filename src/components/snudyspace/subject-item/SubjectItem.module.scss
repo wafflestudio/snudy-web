@@ -1,0 +1,26 @@
+.box {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  float: left;
+  margin: 0 20px 20px 0;
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .taskNum {
+    font-size: 14px;
+  }
+}
+
+.box:hover {
+  box-shadow: -1px 10px 29px 0px rgba(0, 0, 0, 0.8);
+}
