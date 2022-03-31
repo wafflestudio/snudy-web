@@ -5,6 +5,13 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+if (process.env.NODE_ENV === 'development') {
+  (async () => {
+    const { worker } = await import('./mocks/browser');
+    worker.start();
+  })();
+}
+
 ReactDOM.render(
   <BrowserRouter>
     <App />
