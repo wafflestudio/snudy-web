@@ -1,9 +1,19 @@
 import './index.css';
+import axios from 'axios';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
+import { BASE_URL } from './apis/baseURL';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line
+  const { worker } = require('./mocks/browser');
+  worker.start();
+}
+
+axios.defaults.baseURL = BASE_URL;
 
 ReactDOM.render(
   <BrowserRouter>
