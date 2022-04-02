@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 
+import axios from 'axios';
+
 /**
  * TODO remove
  *  an example component for conventions
@@ -8,9 +10,7 @@ const Example = () => {
   const [state, setState] = useState();
 
   useEffect(() => {
-    fetch('https://localhost:8000/example')
-      .then((res) => res.json())
-      .then((res) => setState(res));
+    axios.get('/example').then((res) => setState(res.data));
   }, []);
 
   console.log(state);
