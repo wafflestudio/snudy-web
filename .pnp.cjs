@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:11.8.1"],
             ["@mui/icons-material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
             ["@mui/material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
+            ["@types/axios", "npm:0.14.0"],
             ["@types/classnames", "npm:2.3.1"],
             ["@types/node", "npm:16.11.24"],
             ["@types/react", "npm:17.0.39"],
@@ -46,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-router-dom", "npm:5.3.3"],
             ["@typescript-eslint/eslint-plugin", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
             ["@typescript-eslint/parser", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
+            ["axios", "npm:0.26.1"],
             ["classnames", "npm:2.3.1"],
             ["dayjs", "npm:1.11.0"],
             ["eslint", "npm:8.9.0"],
@@ -4203,6 +4205,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/axios", [
+        ["npm:0.14.0", {
+          "packageLocation": "./.yarn/cache/@types-axios-npm-0.14.0-42f41917ea-12a230b940.zip/node_modules/@types/axios/",
+          "packageDependencies": [
+            ["@types/axios", "npm:0.14.0"],
+            ["axios", "npm:0.26.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/babel__core", [
         ["npm:7.1.18", {
           "packageLocation": "./.yarn/cache/@types-babel__core-npm-7.1.18-b880226f3e-2e5b5d7c84.zip/node_modules/@types/babel__core/",
@@ -5780,6 +5792,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/axe-core-npm-4.4.1-95b0d6a519-ad14c5b710.zip/node_modules/axe-core/",
           "packageDependencies": [
             ["axe-core", "npm:4.4.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["axios", [
+        ["npm:0.26.1", {
+          "packageLocation": "./.yarn/cache/axios-npm-0.26.1-a6641ce4e3-d9eb58ff4b.zip/node_modules/axios/",
+          "packageDependencies": [
+            ["axios", "npm:0.26.1"],
+            ["follow-redirects", "virtual:a6641ce4e3bdcc0997f8f53d9481b67c5d38e21276de8eeee7bf92881685b3ad5600bae416c2af904ceab8132bac649e7efd0af93f18e158e0e65ee05a263d72#npm:1.14.9"]
           ],
           "linkType": "HARD",
         }]
@@ -9111,10 +9133,30 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "SOFT",
         }],
+        ["npm:1.14.9", {
+          "packageLocation": "./.yarn/cache/follow-redirects-npm-1.14.9-522f191631-f5982e0eb4.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "npm:1.14.9"]
+          ],
+          "linkType": "SOFT",
+        }],
         ["virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.14.8", {
           "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-c9849514bd/0/cache/follow-redirects-npm-1.14.8-f4c37ea22a-40c67899c2.zip/node_modules/follow-redirects/",
           "packageDependencies": [
             ["follow-redirects", "virtual:a313c479c5c7e54d9ec8fbeeea69ff640f56b8989ea2dff42351a3fa5c4061fb80a52d8ede0f0826a181a216820c2d2c3f15da881e7fdf31cef1c446e42f0c45#npm:1.14.8"],
+            ["@types/debug", null],
+            ["debug", null]
+          ],
+          "packagePeers": [
+            "@types/debug",
+            "debug"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:a6641ce4e3bdcc0997f8f53d9481b67c5d38e21276de8eeee7bf92881685b3ad5600bae416c2af904ceab8132bac649e7efd0af93f18e158e0e65ee05a263d72#npm:1.14.9", {
+          "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-2db68225c5/0/cache/follow-redirects-npm-1.14.9-522f191631-f5982e0eb4.zip/node_modules/follow-redirects/",
+          "packageDependencies": [
+            ["follow-redirects", "virtual:a6641ce4e3bdcc0997f8f53d9481b67c5d38e21276de8eeee7bf92881685b3ad5600bae416c2af904ceab8132bac649e7efd0af93f18e158e0e65ee05a263d72#npm:1.14.9"],
             ["@types/debug", null],
             ["debug", null]
           ],
@@ -15671,6 +15713,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@emotion/styled", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:11.8.1"],
             ["@mui/icons-material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
             ["@mui/material", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.4.4"],
+            ["@types/axios", "npm:0.14.0"],
             ["@types/classnames", "npm:2.3.1"],
             ["@types/node", "npm:16.11.24"],
             ["@types/react", "npm:17.0.39"],
@@ -15678,6 +15721,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-router-dom", "npm:5.3.3"],
             ["@typescript-eslint/eslint-plugin", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
             ["@typescript-eslint/parser", "virtual:23fe7c7b6284a8a08940d95a0ca67ca385f647f285438043b6d87d9ee5472039590bfc557259aaf5de5e738b902081fef511207ef73ab8196af9076b6fd1349a#npm:5.11.0"],
+            ["axios", "npm:0.26.1"],
             ["classnames", "npm:2.3.1"],
             ["dayjs", "npm:1.11.0"],
             ["eslint", "npm:8.9.0"],
