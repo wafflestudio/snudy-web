@@ -1,3 +1,5 @@
+import { lazy, Suspense } from 'react';
+
 import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -7,17 +9,23 @@ import SnudySpace from './components/snudyspace/SnudySpace';
 import SubjectDetail from './components/subject-detail/SubjectDetail';
 import Todo from './components/todo/Todo';
 
+const Example = lazy(() => import('./components/example/Example'));
+
 function App() {
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route path="/" element={<SnudySpace />} />
-        <Route path="/space/:id" element={<SubjectDetail />} />
+    <Suspense fallback={null}>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<SnudySpace />} />
+          <Route path="/space/:id" element={<SubjectDetail />} />
 
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/todo" element={<Todo />} />
-      </Route>
-    </Routes>
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/todo" element={<Todo />} />
+
+          {process.env.NODE_ENV === 'development' && <Route path="/example" element={<Example />} />}
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 
