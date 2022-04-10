@@ -36,6 +36,7 @@ module.exports = {
     'no-useless-escape': 'off',
     'react/display-name': 'off',
     'react/jsx-no-target-blank': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
