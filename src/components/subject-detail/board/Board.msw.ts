@@ -17,4 +17,4 @@ const getPosts = rest.get(`${BASE_URL}/msw/lecture/:lecture_id/board`, (req, res
   return res(ctx.json({ posts }));
 });
 
-export const handler = [getPosts];
+export const boardHandler = [getPosts];
