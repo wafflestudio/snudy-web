@@ -1,0 +1,35 @@
+.wrapper {
+  padding-right: 20px;
+
+  .timetable {
+    width: 1050px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    height: 840px;
+    margin: auto;
+
+    .cell {
+      width: 150px;
+      padding: 0;
+      height: 60px;
+    }
+
+    td.cell {
+      border: 1px solid #f0f0f0;
+      height: 120px;
+    }
+
+    tbody {
+      display: block;
+      overflow: auto;
+      height: calc(100% - 30px);
+      width: 1050px;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
