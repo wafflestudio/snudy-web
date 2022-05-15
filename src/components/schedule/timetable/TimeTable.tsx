@@ -1,3 +1,5 @@
+import { useEffect, useRef } from 'react';
+
 import dayjs from 'dayjs';
 
 import { mockData, Day } from './TimeTable.mock';
@@ -22,9 +24,10 @@ export interface TimeTableItem {
   time: { day: Day; start_time: number; duration: number }[];
 }
 
-const HALF_HOUR_HEIGHT = 60;
+const HALF_HOUR_HEIGHT = 30;
 
 const TimeTable = () => {
+  const tableRef = useRef<HTMLTableSectionElement>(null);
   const currentDay = dayjs().day();
   const currentDate = dayjs().date();
   const days = [0, 1, 2, 3, 4, 5, 6].map((num) => ({ date: num + currentDate, day: ((num + currentDay) % 7) as Day }));
@@ -45,13 +48,22 @@ const TimeTable = () => {
       <td className={styles.cell} key={`${time}_${day.date}`} style={{ position: 'relative' }}>
         <div
           className={styles.timeItem}
-          style={{ height: HALF_HOUR_HEIGHT * 2 * (currentTime?.duration ?? 0), backgroundColor: timeItem.color }}
+          style={{
+            height: HALF_HOUR_HEIGHT * 2 * (currentTime?.duration ?? 0),
+            backgroundColor: timeItem.color,
+          }}
         >
           {timeItem.name}
         </div>
       </td>
     );
   };
+
+  useEffect(() => {
+    if (!tableRef.current) return;
+    const targetY = dayjs().hour() * HALF_HOUR_HEIGHT * 2 - tableRef.current.clientHeight / 2;
+    tableRef.current.scrollTo(0, targetY);
+  }, []);
 
   return (
     <div className={styles.wrapper}>
@@ -65,7 +77,7 @@ const TimeTable = () => {
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody ref={tableRef}>
           {times.map((time) => (
             <tr key={time}>{days.map((day) => renderCell(day, time))}</tr>
           ))}
