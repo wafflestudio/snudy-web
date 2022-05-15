@@ -1,17 +1,10 @@
 import dayjs from 'dayjs';
 
+import { mockData, Day } from './TimeTable.mock';
+
 import styles from './TimeTable.module.scss';
 
 // matches to dayjs day() return val
-enum Day {
-  SUNDAY = 0,
-  MONDAY,
-  TUESDAY,
-  WEDNESDAY,
-  THURSDAY,
-  FRIDAY,
-  SATURDAY,
-}
 
 const DAY_LABEL_MAP = {
   [Day.SUNDAY]: '일',
@@ -23,13 +16,42 @@ const DAY_LABEL_MAP = {
   [Day.SATURDAY]: '토',
 };
 
+export interface TimeTableItem {
+  name: string;
+  color: string;
+  time: { day: Day; start_time: number; duration: number }[];
+}
+
+const HALF_HOUR_HEIGHT = 60;
+
 const TimeTable = () => {
   const currentDay = dayjs().day();
   const currentDate = dayjs().date();
   const days = [0, 1, 2, 3, 4, 5, 6].map((num) => ({ date: num + currentDate, day: ((num + currentDay) % 7) as Day }));
-  const times = Array(24)
+  const times = Array(48)
     .fill(0)
-    .map((_, i) => i);
+    .map((_, i) => i / 2);
+
+  const renderCell = (day: { day: Day; date: number }, time: number) => {
+    const timeItem = mockData.find(
+      (data) => !!data.time.find((timeItem) => timeItem.day === day.day && timeItem.start_time === time)
+    );
+
+    if (!timeItem) return <td className={styles.cell} key={`${time}_${day.date}`} />;
+
+    const currentTime = timeItem.time.find((timeItem) => timeItem.day === day.day && timeItem.start_time === time);
+
+    return (
+      <td className={styles.cell} key={`${time}_${day.date}`} style={{ position: 'relative' }}>
+        <div
+          className={styles.timeItem}
+          style={{ height: HALF_HOUR_HEIGHT * 2 * (currentTime?.duration ?? 0), backgroundColor: timeItem.color }}
+        >
+          {timeItem.name}
+        </div>
+      </td>
+    );
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -45,11 +67,7 @@ const TimeTable = () => {
         </thead>
         <tbody>
           {times.map((time) => (
-            <tr key={time}>
-              {days.map((day) => (
-                <td className={styles.cell} key={`${time}_${day.date}`} />
-              ))}
-            </tr>
+            <tr key={time}>{days.map((day) => renderCell(day, time))}</tr>
           ))}
         </tbody>
       </table>

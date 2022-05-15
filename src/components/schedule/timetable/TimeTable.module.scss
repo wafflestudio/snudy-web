@@ -11,12 +11,12 @@
     .cell {
       width: 150px;
       padding: 0;
-      height: 60px;
+      height: 30px;
     }
 
     td.cell {
       border: 1px solid #f0f0f0;
-      height: 120px;
+      height: 60px;
     }
 
     tbody {
@@ -29,6 +29,16 @@
 
       &::-webkit-scrollbar {
         display: none;
+      }
+
+      .timeItem {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
       }
     }
   }
