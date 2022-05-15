@@ -1,0 +1,6 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: calc(100vh - 136px);
+  padding: 20px;
+}
