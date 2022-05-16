@@ -2,6 +2,7 @@ import './index.css';
 import axios from 'axios';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 
 import { BASE_URL } from './apis/baseURL';
 import App from './App';
@@ -17,7 +18,9 @@ axios.defaults.baseURL = BASE_URL;
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <RecoilRoot>
+      <App />
+    </RecoilRoot>
   </BrowserRouter>,
   document.getElementById('root')
 );
